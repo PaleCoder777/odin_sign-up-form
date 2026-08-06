@@ -2,3 +2,19 @@ body {
     background-color: black;
     color: white;
 }
+
+@font-face {
+    font-family: "Norse";
+    src: 
+        url(fonts/Norse.woff2) format("woff2"),
+        url(fonts/Norse.woff) format("woff");
+    font-display: normal;
+}
+
+.sans {
+    font-family: sans-serif;
+}
+
+.norse {
+    font-family: "Norse";
+}
