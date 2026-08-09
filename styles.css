@@ -11,6 +11,10 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: white;
+}
+
 @font-face {
     font-family: "Norse";
     src: 
@@ -32,15 +36,38 @@ body {
     flex-direction: column;
     flex: 1;
     position: relative;
+    align-items: center;
 }
 
 #odinTextBlock {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     color: white;
-    height: 200px;
-    width: auto;
+    height: 150px;
+    width: 100%;
+    top: 25%;
+    background-color: rgb(255 186 0 / 10%);
+    font-family: "Norse";
+    font-size: 100px;
+    font-weight: bold;
+}
 
+.textCredit {
+    position: absolute;
+    color: white;
+    top: 95%;
+    font-size: 0.8rem;
+}
+
+.textImg {
+    height: 100%;
+}
+
+#odinTextBlock > .text {
+    margin: 0;
 }
 
 .backgroundImg {
@@ -78,6 +105,7 @@ body {
 label {
     display: block;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 form input {
@@ -86,24 +114,32 @@ form input {
 }
 
 .textAboveWidgets {
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 25px 50px;
+    margin: 0;
+    font-size: 2rem;
+    background-color: white;
 }
 
-.userForm > form {
+.userForm {
     display: flex;
     flex-flow: column wrap;
 }
 
 .form-controls {
+    flex: 1;
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 50px;
-    background-color: coral;
+    background-color: white;
     padding: 0px 200px 0px 50px;
+    margin: 0;
 }
 
 .form-end {
+    flex: 1.2;
     padding: 0px 0px 0px 50px;
+    background-image: linear-gradient(to bottom, white, black);
+    margin: 0;
 }
 
 .form-end p {
