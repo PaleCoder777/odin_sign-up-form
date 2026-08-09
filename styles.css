@@ -37,6 +37,8 @@ a {
     flex: 1;
     position: relative;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 #odinTextBlock {
@@ -79,6 +81,8 @@ a {
     flex: 1.5;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .userForm {
@@ -106,11 +110,29 @@ label {
     display: block;
     font-size: 1rem;
     text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 form input {
     margin-right: 100px;
     margin-bottom: 20px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid darkorange;
+    box-shadow: 1px 1px 5px black;
+}
+
+form input:user-invalid {
+    background-color: rgb(255 151 0 / 25%);
+}
+
+form input:user-valid {
+    background-color: rgb(80 255 0 / 25%)
 }
 
 .textAboveWidgets {

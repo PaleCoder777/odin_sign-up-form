@@ -1,5 +1,33 @@
-# odin_sign-up-form
-One and only Forms project in the Intermediate HTML/CSS course of the Full-Stack JS Path.
+# Full Stack JavaScript Path, Intermediate HTML && CSS Course, Project: Sign up Form
+
+### Source
+- [The Odin Project, Fullstack JavaScript Path, Intermediate HTML && CSS, Project: Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+
+
+### Scope
+- HTML and CSS used, focused on forms and styling
+- The base project is to create (fill...)
+
+
+### Key Reflection Points
+- (key point)
+
+
+### Project Considerations/Logic Errors
+- displaying pattern validation for user to see
+- zooming in affects my element sizing
+
+
+
+### New Feature Additions
+- [] (pl)
+
+
+
+### Related Topics/Concepts
+- HTML, CSS, flexbox, positioning, forms, linear-gradient, text-transform, font-face, viewport, git
+
+### Credits
 
 Fonts:
 Norse font from <a href="https://www.joelcarrouche.com/fonts/norse">Joel Carrouche</a>
