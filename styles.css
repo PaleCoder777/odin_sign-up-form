@@ -1,26 +1,17 @@
+/* Universal */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: darkgray;
-    color: black;
-    display: flex;
+html {
     width: 100vw;
     height: 100vh;
-    flex-direction: row;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-#background a {
-    color: white;
-}
-
+/* Adding Fonts */
 @font-face {
     font-family: "Norse";
     src: 
@@ -29,188 +20,225 @@ body {
     font-display: normal;
 }
 
-.sans {
-    font-family: sans-serif;
-}
+/* Project Scaffold - Flexbox */
 
-.norse {
-    font-family: "Norse";
-}
+/* Body + 2 initial sections, flexbox used */
 
-#background{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
+body {
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
-}
-
-#odinTextBlock {
+    background-color: #363030;
+    color: #FFFFFF;
+    color: black;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: white;
-    width: 582.41px;
-    height: 150px;
-    top: 25%;
-    background-color: rgb(255 186 0 / 10%);
-    font-family: "Norse";
-    font-size: 100px;
-    font-weight: bold;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-
-
-.textCredit {
-    position: absolute;
-    color: white;
-    top: 95%;
-    font-size: 0.8rem;
-}
-
-.textImg {
-    height: 100%;
-}
-
-#odinTextBlock > .text {
-    margin: 0;
-}
-
-.backgroundImg {
-    height: 100%;
-    width: 100%;
-}
-
-#user {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.userForm {
+#imgSidebar {
+    /* background-color: #570F00; */
     flex: 1;
-}
-.userDescription {
-    flex: 1;
+    position: relative;
 }
 
-.userDescription {
-    background-image: linear-gradient(to bottom, orange, white 50%);
-
+#userInfo {
+    /* background-color: #001B6B; */
+    flex: 2;    
+    position: relative;
 }
 
-.userD1, .userD2 {
-    font-size: 2rem;
-    text-wrap-style: auto;
-}
+/* Image Sidebar Section */
 
-.userForm {
-    padding: 0px 0px 0px 0px;
-}
+    /* Odin Text Block Flex */
 
-label {
-    display: block;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
+    .odinTextBlock {
+        display: flex;
+        flex-direction: row;
+    }
 
-form input {
-    margin-right: 100px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 80%;
-}
+    /* General */
 
-form input:focus {
-    outline: none;
-    border: 1px solid darkorange;
-    box-shadow: 1px 1px 5px black;
-}
+    .backgroundImg {
+        display: block;
+        height: 100%;
+        width: 100%;
 
-form input:user-invalid {
-    background-color: rgb(255 151 0 / 25%);
-}
+    }
 
-form input:user-valid {
-    background-color: rgb(80 255 0 / 25%)
-}
+    .odinTextBlock {
+        background-color: rgb(0 0 0 / 50%);
+        height: 15%;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 
-.textAboveWidgets {
-    padding: 0px 0px 25px 50px;
-    margin: 0;
-    font-size: 2rem;
-    background-color: white;
-}
+    .odinTextImg {
+        height: 100%;
+        width: auto;
+    }
 
-.textAboveWidgets > small {
-    font-size: 1rem;
-}
+    .odinText {
+        font-family: "Norse";
+        font-weight: bold;
+        font-size: 5rem;
+    }
 
-.userForm {
-    display: flex;
-    flex-flow: column wrap;
-}
+    .textCredit {
+        position: absolute;
+        bottom: 1%;
+        width: 100%;
+        text-align: center;
+        font-size: 0.75rem;
+    }
 
-.form-controls {
-    flex: 1;
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 50px;
-    background-color: white;
-    padding: 0px 200px 0px 50px;
-    margin: 0;
-}
+    .textCredit > a {
+        color: #FFFFFF;
+    }
 
-.form-end {
-    flex: 1.2;
-    padding: 0px 0px 0px 50px;
-    background-image: linear-gradient(to bottom, white 50%, black);
-    margin: 0;
-    padding-top: 25px;
-}
+/* User Info Section Flex */
 
-.form-end > button {
-    background-color: #596D48;
-    color: white;
-    font-weight: bold;
-    padding: 10px 40px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+    #userInfo {
+        display: flex;
+        flex-direction: column;
+    }
 
-.form-end a {
-    text-decoration: none;
-    color: #596D48;
-    font-weight: bold;
-}
+    .userIntro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* background-color: #14FF49; */
+        background-image: linear-gradient(to bottom, orange, 5%, white 50%, 95%, orange);
 
-.form-end p {
-    margin-left: 0px;
-}
+        flex: 1;
+    }
 
+    .userForm {
+        /* background-color: #087525; */
+        flex: 2;
+    }
 
+/* User Info Section General Styling */
 
+    /* User Intro */
+    .introMessage1 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0px 200px 0px 50px;
+    }
+
+    .introMessage2 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0px 200px 25px 50px;
+    }
+
+    .introMessage3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0px 200px 30px 50px;    }
 
 
-/* Visual Outline Aid
+/* User Form Section */
 
-#background,
-#user {
-    outline: 1px solid red; 
-}
+    /* Flex */
 
-#user > div {
-    outline: 1px solid red;
-}
-*/
+    .userForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formControls {
+        background-color: #FFFFFF;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 3px 5px 0px #B7C9BC;
+    }
+
+    .formInputs {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .formEnd {
+        /* background-color: #350C7A; */
+        background-image: linear-gradient(to bottom, orange, 5%, white 50%, 95%, orange);
+        flex: 1;
+    }
+
+    /* General Styling */
+
+    .formControls {
+        position: relative;
+    }
+
+    .formTitle {
+        font-size: 1.25em;
+        margin:15px 0px 15px 50px;
+    }
+
+    .formTitle > small {
+        font-size: 0.75em;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .formInputs {
+        margin: 0px 200px 0px 50px;
+        flex: 1;
+    }
+
+    .inputContainer {
+        width: 50%;
+    }
+
+        .inputContainer > label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .inputContainer > input {
+            width: 60%;
+            font-size: 1rem;
+            padding: 3px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .inputContainer > input:focus {
+            border: 1px solid black;
+            box-shadow: 1px 1px 5px #000000;
+        }
+
+        .inputContainer > input:user-valid {
+            background-color: rgb(0 255 0 /10%);
+        }
+
+        .inputContainer > input:user-invalid {
+            background-color: rgb(255 0 0 / 10%);
+        }
+    
+    .formEnd {
+
+    }
+
+    .submitBtn {
+        display: block;
+        font: 1.1rem;
+        font-weight: bold;
+        margin: 30px 0px 30px 50px;
+        padding: 1.5vh 3vw 1.5vh 3vw;
+        background-color: #596D48;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .endMessage1 {
+        margin: 0px 0px 0px 50px;
+    }

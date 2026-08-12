@@ -10,7 +10,10 @@
 
 
 ### Key Reflection Points
-- (key point)
+- using dev tools selection and style lists to review containers and nesting
+- using position property, absolute and relative to keep elements inside their parent container
+- using relative property to give a flexed container a box shadow
+
 
 
 ### Project Considerations/Logic Errors
