@@ -31,6 +31,7 @@ body {
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #imgSidebar {
@@ -116,7 +117,7 @@ body {
         flex: 2;
     }
 
-/* User Info Section General StylingFlex */
+/* User Info Section General Styling */
 
     /* User Intro */
     .introMessage1 {
@@ -134,49 +135,90 @@ body {
     .introMessage3 {
         font-size: 1.25rem;
         font-weight: bold;
-        margin: 0px 200px 25px 50px;    }
+        margin: 0px 200px 30px 50px;    }
 
 
-/* User Form Section Flex */
+/* User Form Section */
 
-.userForm {
-    display: flex;
-    flex-direction: column;
-}
+/* Flex */
 
-.formControls {
-    background-color: #6A14FF;
-    flex: 1;
-}
+    .userForm {
+        display: flex;
+        flex-direction: column;
+    }
 
-.formEnd {
-    background-color: #350C7A;
-    flex: 1;
-}
+    .formControls {
+        background-color: #6A14FF;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
-/* Form Control Div Flex */
+    .formInputs {
+        display: flex;
+        flex-flow: row wrap;
+    }
 
-.formControls {
-    display: flex;
-    flex-direction: column;
-}
+    .formEnd {
+        background-color: #350C7A;
+        flex: 1;
+    }
 
-.formTitle {
+/* General Styling */
 
-}
+    .formControls {
+
+    }
+
+    .formTitle {
+        font-size: 1.25em;
+        margin:15px 0px 15px 50px;
+    }
+
+    .formTitle > small {
+        font-size: 0.75em;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .formInputs {
+        margin: 0px 200px 0px 50px;
+        flex: 1;
+    }
+
+    .inputContainer {
+        width: 50%;
+    }
+
+        .inputContainer > label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .inputContainer > input {
+            width: 60%;
+            font-size: 1rem;
+            padding: 3px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .inputContainer > input:focus {
+            border: 1px solid #FF7500;
+            box-shadow: 1px 1px 5px #000000;
+        }
+
+        .inputContainer > input:user-valid {
+            background-color: rgb(0 255 0);
+        }
+
+        .inputContainer > input:user-invalid {
+            background-color: rgb(255 0 0);
+        }
+
 
 .formInputs {
     display: flex;
     flex-direction: row;
-}
-
-/* Form Inputs Div Flex */
-.formInputs {
-    display: flex;
-    flex-flow: column wrap;
-    margin-right: 200px;
-}
-
-.inputContainer {
-    flex: 1;
 }
