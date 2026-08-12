@@ -15,7 +15,7 @@
 
 ### Project Considerations/Logic Errors
 - displaying pattern validation for user to see
-- zooming in affects my element sizing
+- zooming in affects my element sizing, have not yet reached responsiveness concept
 
 
 
@@ -25,7 +25,7 @@
 
 
 ### Related Topics/Concepts
-- HTML, CSS, flexbox, positioning, forms, linear-gradient, text-transform, font-face, viewport, git
+- HTML, CSS, flexbox, positioning, forms, linear-gradient, text-transform, font-face, viewport, git, pseudo classes
 
 ### Credits
 

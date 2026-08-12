@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Project Scaffold - Flexbox */
+
+/* Body + 2 initial sections, flexbox used */
+
+body {
+    min-height: 100%;
+    min-height: 100%;
+    background-color: #363030;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+#imgSidebar {
+    background-color: #570F00;
+    flex: 1;
+    position: relative;
+}
+
+#userInfo {
+    background-color: #001B6B;
+    flex: 2;    
+}
+
+/* Image Sidebar Section */
+
+    /* Odin Text Block Flex */
+
+    .odinTextBlock {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255 186 0 / 10%);
+        height: 15%;
+        width: 100%;
+    }
+
+    /* General */
+
+    .backgroundImg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .odinTextBlock {
+        position: absolute;
+        top: 50%;
+    }
+
+    .textCredit {
+        position: absolute;
+        bottom: 1%;
+    }
+
+/* User Info Section Flex */
+
+#userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userIntro {
+    background-color: #14FF49;
+    flex: 1;
+}
+
+.userForm {
+    background-color: #087525;
+    flex: 2;
+}
+
+/* User Form Section Flex */
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControls {
+    background-color: #6A14FF;
+    flex: 1;
+}
+
+.formEnd {
+    background-color: #350C7A;
+    flex: 1;
+}
+
+/* Form Control Div Flex */
+
+.formControls {
+    display: flex;
+    flex-direction: column;
+}
+
+.formTitle {
+
+}
+
+.formInputs {
+    flex: 1;
+}
+
+/* Form Inputs Div Flex */
+.formInputs {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 200px;
+}
+
+.inputContainer {
+    flex: 1;
+}

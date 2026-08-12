@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: darkgray;
     color: black;
@@ -11,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
-a {
+#background a {
     color: white;
 }
 
@@ -35,10 +41,10 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
-    position: relative;
     align-items: center;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #odinTextBlock {
@@ -48,14 +54,16 @@ a {
     align-items: center;
     position: absolute;
     color: white;
+    width: 582.41px;
     height: 150px;
-    width: 100%;
     top: 25%;
     background-color: rgb(255 186 0 / 10%);
     font-family: "Norse";
     font-size: 100px;
     font-weight: bold;
 }
+
+
 
 .textCredit {
     position: absolute;
@@ -83,23 +91,24 @@ a {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .userForm {
-    flex: 2;
+    flex: 1;
 }
 .userDescription {
     flex: 1;
 }
 
 .userDescription {
-    padding: 100px 200px 0px 50px;
-    background-image: linear-gradient(to bottom, orange, white);
+    background-image: linear-gradient(to bottom, orange, white 50%);
 
 }
 
 .userD1, .userD2 {
     font-size: 2rem;
+    text-wrap-style: auto;
 }
 
 .userForm {
@@ -119,6 +128,8 @@ form input {
     border: 1px solid lightgray;
     padding: 5px;
     border-radius: 5px;
+    font-size: 1rem;
+    width: 80%;
 }
 
 form input:focus {
@@ -142,6 +153,10 @@ form input:user-valid {
     background-color: white;
 }
 
+.textAboveWidgets > small {
+    font-size: 1rem;
+}
+
 .userForm {
     display: flex;
     flex-flow: column wrap;
@@ -160,8 +175,24 @@ form input:user-valid {
 .form-end {
     flex: 1.2;
     padding: 0px 0px 0px 50px;
-    background-image: linear-gradient(to bottom, white, black);
+    background-image: linear-gradient(to bottom, white 50%, black);
     margin: 0;
+    padding-top: 25px;
+}
+
+.form-end > button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-end a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
 }
 
 .form-end p {
